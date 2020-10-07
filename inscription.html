@@ -19,48 +19,120 @@
 <main>
 
 
-   <section>
-<h1>Créer un compte</h1>
+   <section id="section-inscription">
+
+
+    <h1>Créer un compte</h1>
+
+
     <fieldset id="fielset-inscription">
 
 
-    <form method="POST" action="">
+            <form method="POST" action="connexion.html">
+
+                    <H2 id="identifiants">IDENTIFIANTS</H2>
                         <div class="champs-inscription">
                             <label for="login">Login:</label><br>
-                            <input type="text" id="login" name="login" required><br>
+                            <input type="text" id="login" name="login" required/><br>
                         </div>
 
                         <div class="champs-inscription">
                             <label for="mot de passe">Mot de passe :</label><br>
-                            <input type="password" id="mot de passe" name="mot de passe" required><br>
+                            <input type="password" id="mot de passe" name="mot de passe" required/><br>
                         </div>
 
                         <div class="champs-inscription">
                             <label for="confirmer mot de passe">Confirmer le mot de passe :</label><br>
-                            <input type="password" id="confirmer mot de passe" name="confirmer mot de passe" required><br>
+                            <input type="password" id="confirmer mot de passe" name="confirmer mot de passe" required/><br>
                         </div>
 
-                        <div class="champs-inscription">
-                             <label for="date de naissance">Date de naissance :</label><br>
-                            <input type="date" name="date de naissance" id="date de naissance" placeholder="date de naissance" size="30" maxlength="10" />
-                        </div>
-                        <br>
+                        
+                    <H2 id="coordonées">COORDONNEES</H2>
+
+
+
+                       
 
                         <div class="champs-inscription">
                                 <label for="Nom">Nom :</label><br>
-                                <input type="text" name="Nom" id="Nom"/><br>
-                               </div>
+                                <input type="text" name="Nom" id="Nom" required/><br>
+                        </div>
 
-                               <div class="champs-inscription">
+                        <div class="champs-inscription">
                                 <label for="Prénom">Prénom :</label><br>
-                                <input type="text" name="Prénom" id="Prénom"/>
+                                <input type="text" name="Prénom" id="Prénom" required/><br>
+                        </div>
+
+                        <div class="champs-inscription">
+                            <label for="tel">Votre téléphone :</label><br>
+                            <input type="tel" name="tel" id="tel"   />                        
+                        </div>
+
+                        <div class="champs-inscription">
+                                <label for="email">Votre e-mail :</label><br>
+                                <input type="email" name="email" id="email" required />
+                        </div>
+                        
+                        <H2 id="coordonées">QUELQUES RENSEIGNEMENTS SUPPLÉMENTAIRES</H2>
+
+                        <div id="genre" >
+                            <label for="h">Homme</label>
+                            <input type="radio" id="h" name="sexe" value="homme">
+                            <label for="f">Femme</label>  
+                            <input type="radio" id="f" name="sexe" value="femme"required>
+                                       
                         </div>
 
 
-    </form>
-</fieldset>
+                        <div class="champs-inscription">
+                            <label for="date de naissance">Date de naissance :</label><br>
+                            <input type="date" name="date de naissance" id="date de naissance" placeholder="date de naissance"  required /><br>
+                        </div>
 
-</section> 
+
+                        <div id="niveau-etudes">
+                            <label for="niveau etudes" >Votre niveau d'étude</label><br />
+                            <select required name="niveau etudes" id="niveau etudes" >
+                                <option value=""></option>
+                                <option value="3eme">3ème</option>
+                                <option value="CAP/BEP">CAP/BEP</option>
+                                <option value="Bac">Bac</option>
+                                <option value="Bac Pro">Bac Pro</option>
+                                <option value="License">License</option>
+                                <option value="Master">Master</option>
+                                <option value="Doctorat">Doctorat</option>
+                            </select >
+                        </div>
+                        <br />
+                        <div >
+                            <label for="precisions">Présentez-vous en quelques lignes :</label><br>
+                            <textarea name="precisions" id="precisions" cols="60" rows="6"></textarea>
+                        </div>
+                        <br />     <br />
+                        <div  class="choix-hobbies">
+                            <p id="essaicouleur">
+                                Quels sont vos hobbies :<br /><br />
+                                <input type="checkbox" name="Tennis" id="Tennis" class="choix-hobbies" /> <label for="Tennis">Tennis</label><br />
+                                <input type="checkbox" name="Foot" id="Foot" /> <label for="Foot">Foot</label><br />
+                                <input type="checkbox" name="Cinéma" id="Cinéma" /> <label for="Cinéma">Cinéma</label><br />
+                                <input type="checkbox" name="Théatre" id="Théatre" /> <label for="Théatre">Théatre</label><br />
+                                <input type="checkbox" name="Musique" id="Musique" /> <label for="Musique">Musique</label><br />
+                                <input type="checkbox" name="Jul" id="Jul" /> <label for="Jul">Jul</label>
+                             </p>
+                        </div>
+
+                        <div class="champs-connexion" id="submit">
+                            <input id="submit" type="submit" value="Envoyer">
+                        </div>
+
+                        
+
+
+
+            </form>
+    </fieldset>
+
+    </section> 
 
 
 
