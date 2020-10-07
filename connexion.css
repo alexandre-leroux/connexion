@@ -12,20 +12,38 @@ html, body, main{
 }
 
 header{
-    height: 60px;
+    height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgb(196, 196, 196);
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
 }
-
-header h1{
-    margin-top: auto;
-    margin-bottom: auto;
-    color: white;
+header img{
+    width: 300px;
+    margin-left: 3%;
 }
+
+header nav{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+header a{
+    display: flex;
+    height: 100%;       
+    align-items: center;
+}
+
+nav a{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+nav a:hover {opacity: 1}
 
 
 /*--------------------------main----------------------------*/
